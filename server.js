@@ -17,6 +17,10 @@ fetchDataCron();
 
 app.use('/',apiRoutes)
 
+app.get('/',(req,res)=>{
+    res.send("Welcome to the server")
+})
+
 app.listen(PORT,()=>{
     console.log(`🚀Server Listening on PORT ${PORT}`);
 })
